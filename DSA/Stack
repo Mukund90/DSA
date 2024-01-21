@@ -1,0 +1,29 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+int main()
+{
+stack<string>str1;
+
+str1.push("mukund");
+str1.push("jha");
+str1.push("kumar");
+str1.push("november");
+
+
+str1.pop();
+
+cout<<" Top position of the stack->"<<" "<<str1.top();
+
+
+cout<<endl;
+
+cout<<" The size of the stack is ->" <<" " <<str1.size();
+
+cout<<endl;
+
+cout<<"Is stack is empty or not-> "<<" "<<str1.empty();
+
+cout<<endl;
+
+}
