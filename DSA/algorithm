@@ -1,0 +1,43 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+
+using namespace std;
+int main()
+{
+    vector<int>v1;
+
+    v1.push_back(1);
+    v1.push_back(2);
+    v1.push_back(3);
+    v1.push_back(4);
+   cout<<"The element is present or not->"<<" "<<binary_search(v1.begin(),v1.end(),10)<<endl;
+
+   cout<<endl;
+
+   reverse(v1.begin(),v1.end());
+
+   cout<<endl;
+
+   for(auto i: v1)
+   {
+    cout<<i<<" ";
+   }
+
+   cout<<endl;
+
+   rotate(v1.begin(),v1.begin()+1,v1.end());
+
+   cout<<endl;
+
+   sort(v1.begin(),v1.end());
+
+   cout<<endl;
+
+   for(auto i: v1)
+   {
+    cout<<i<<" ";
+   }
+
+}
+ 
